@@ -1,0 +1,64 @@
+/**
+ * $NAVIGATION
+ */
+nav > ul,
+.nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  font-size: em(24px);
+  line-height: 1;
+  color: $red;
+
+  .nav__item {
+    display: inline-block;
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.nav__item {
+  @include transition(color 0.2s);
+  color: $red;
+  text-decoration: none;
+
+  &:hover {
+    color: $turquoise;
+  }
+
+  a {
+    text-decoration: none;
+    color: $red;
+
+    &:hover {
+      color: $turquoise;
+    }
+  }
+}
+
+.nav-container {
+  float: right;
+  margin-top: 20px;
+}
+
+/**
+ * $CART NAVIGATION
+ */
+.nav--cart {
+  margin-bottom: 46px;
+  font-size: em(42px);
+  letter-spacing: 2px;
+  color: $orange;
+  text-align: right;
+
+  > .nav__item {
+    color: $orange;
+    margin: 0;
+  }
+}

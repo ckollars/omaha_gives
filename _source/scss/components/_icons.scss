@@ -1,0 +1,5 @@
+.icon--cart {
+  @include background-image-retina('../img/og-icon_cart', png, 32px, 29px);
+  width: 32px;
+  height: 29px;
+}

@@ -44,7 +44,7 @@ module.exports = function (grunt) {
   grunt.registerTask(
     'server',
     'Build a development (_dev) site with watch the comand running.',
-    ['build-styles', 'build-scripts', 'copy-scripts', 'copy:images', 'copy-patterns', 'watch' ]
+    ['build-styles', 'build-scripts', 'copy-scripts', 'copy:images', 'copy:html', 'watch' ]
   );
 
 };

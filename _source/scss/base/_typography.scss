@@ -1,0 +1,95 @@
+html {
+  font-family: $base-font-family;
+  font-size: 84%;
+
+  @include respond-to(mobile){
+    font-size: 80%;
+  }
+  @include respond-to(small){
+    font-size: 90%;
+  }
+  @include respond-to(medium){
+    font-size: 100%;
+  }
+}
+
+body {
+  font-size: rem(16px);
+  line-height: rem(30px);
+  color: $light-gray;
+}
+
+/**
+ * $HEADINGS
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  line-height: 1;
+  // margin: 0;
+}
+h1 {
+  font-size: em(72px);
+  color: $blue-teal;
+}
+h2 {
+  font-size: em(54px);
+  color: $gold;
+}
+h3 {
+  font-size: em(42px);
+  color: $gold;
+}
+h4 {
+  font-size: em(36px);
+  color: $blue-teal;
+}
+h5 {
+  font-size: em(30px);
+  color: $gold;
+}
+h6 {
+  font-size: em(24px);
+  color: $blue-teal;
+}
+// TODO: Refer to Slack conversation to add subheads
+.page-title--header {
+  margin: em(40px) 0;
+}
+
+/**
+ * $PARAGRAPHS
+ */
+p, .p {
+  font-size: em(16px);
+  line-height: em(30px);
+  margin: 0 0 em(30px);
+}
+
+.copy-small {
+  font-size: em(13px);
+  line-height: em(20px);
+  color: $light_gray;
+}
+
+.copy-large {
+  font-size: em(18px);
+  color: $teal2;
+}
+
+/**
+ * $QUOTES
+ */
+blockquote, .quote {
+  font-size: em(24px);
+  line-height: em(36px);
+  font-weight: 300;
+  font-style: italic;
+  color: $light_gray;
+}
+
+

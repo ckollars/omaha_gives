@@ -1,0 +1,30 @@
+#header {
+  padding-top: 10px;
+  background: url(../img/bg-texture_header.jpg) no-repeat center top;
+  overflow: hidden;
+}
+
+/**
+ * $LOGO
+ */
+.logo--header {
+  @include background-image-retina('../img/og-logo-header', png, 32px, 29px);
+  float: left;
+  width: 376px;
+  height: 153px;
+  text-indent: em(-9999px);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.logo--print {
+  display: none;
+
+  @media print {
+    display: block;
+  }
+}
+
+.background-circles {
+
+}

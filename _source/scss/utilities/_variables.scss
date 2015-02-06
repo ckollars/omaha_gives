@@ -1,0 +1,120 @@
+/**
+ * Colors
+ */
+$dark_red: #a13327;
+$red: #b33c2a;
+$light_red: #be594a;
+
+$dark_turquoise: #74a99c;
+$turquoise: #88bbae;
+$light_turquoise: #9ac5ba;
+
+$dark_blue: #6ea4b9;
+$blue: #82b6c8;
+$light_blue: #94c1d0;
+
+$dark_gold: #ce933d;
+$gold: #daa648;
+$light_gold: #dfb463;
+
+$dark_green: #718449;
+$green: #859857;
+$light_green: #97a870;
+
+$dark_orange: #cf6a29;
+$orange: #db7d2d;
+$light_orange: #e0914d;
+
+$dark_teal: #2c6c66;
+$teal: #318079;
+$light_teal: #50928d;
+
+$dark_ochre: #9e672a;
+$ochre: #b07a2e;
+$light_ochre: #bc8e4d;
+
+$dark_purple: #5a5581;
+$purple: #6b6694;
+$light_purple: #817da4;
+
+$dark_brick: #a94a27;
+$brick: #ba5829;
+$light_brick: #c57149;
+
+$dark_olive: #4b583d;
+$olive: #5a6a49;
+$light_olive: #738064;
+
+$teal2: #0f3b50;
+$blue-teal: #0f3b50;
+$light_blue-teal: #d9e8ed;
+$cream: #fcf4ea;
+
+$dark_gray: #333333;
+$light_gray: #666666;
+
+$black: #000000;
+$white: #ffffff;
+
+/**
+ * Typography
+ */
+$lato: 'Lato';
+$base-font-family: $lato, Helvetica, Arial, sans-serif;
+
+/**
+ * $BREAKPOINTS
+ */
+$breakpoints: (
+  'mobile'  : ( max-width:  767px ),
+  'small'   : ( min-width:  768px ),
+  'medium'  : ( min-width:  960px ),
+  'large'   : ( min-width: 1140px )
+);
+
+/**
+ * $SUSY
+ */
+$susy: (
+  columns: 12,
+  gutters: .24,
+  container: 1140px
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

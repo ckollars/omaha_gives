@@ -1,0 +1,40 @@
+
+body {
+  background-color: $purple
+}
+
+#main {
+  background-color: $light-blue;
+}
+
+.page--basic > .main-content {
+  background-color: $white;
+}
+
+// INITIAL TESTING
+.cream-bg {
+  background: $cream;
+}
+
+.container {
+  @include clearfix;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.column-half {
+  @include span(6);
+
+  &:last-child {
+    @include omega;
+  }
+}
+
+.column-thirds {
+  @include span(4);
+
+  &:last-child {
+    @include omega;
+  }
+}
+

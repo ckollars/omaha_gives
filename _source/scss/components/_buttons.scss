@@ -1,0 +1,51 @@
+.btn {
+  @include transition(background-color 0.2s);
+  display: block;
+  background-color: $turquoise;
+  border-radius: 5px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark_turquoise;
+  }
+  &:active,
+  .active {
+    background-color: $light_turquoise;
+  }
+}
+
+.btn--large {
+  padding: 20px 30px;
+  font-size: em(24px);
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.btn--small {
+  padding: 16px;
+  font-size: em(16px);
+}
+
+.btn--secondary {
+  @include transition(color 0.2s);
+  padding: 16px 16px 16px 42px;
+  background-color: $white;
+  font-size: em(18px);
+  color: $blue;
+  // NOTE: Adjust image nameing convention to work
+  @include background-image-retina('../img/og-icon_add', png, 16px, 16px);
+
+  &:hover {
+    background-color: $dark_blue;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $light_blue;
+    color: $white;
+  }
+}

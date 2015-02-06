@@ -1,5 +1,5 @@
 {
-  "name": "dropdabase",
+  "name": "omahagives24",
   "version": "0.0.0",
   "authors": [
     "Christopher Kollars <chris@christopherkollars.com>"
@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.1",
-    "bourbon": "~4.0.2"
+    "bourbon": "~4.0.2",
+    "susy": "~2.2.2"
   }
 }

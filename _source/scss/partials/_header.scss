@@ -1,9 +1,14 @@
 #header {
+  position: relative;
   padding-top: 10px;
-  background: url(../img/bg-texture_header.jpg) no-repeat center top;
+  background: $tan url(../img/bg-texture_header.jpg) repeat-x center top;
   overflow: hidden;
 }
 
+.wrap--header {
+  position: relative;
+  z-index: 1;
+}
 /**
  * $LOGO
  */
@@ -25,6 +30,11 @@
   }
 }
 
+// NOTE: Works for now but come back for RWD
 .background-circles {
-
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 1600px;
+  height: 100%;
 }

@@ -4,7 +4,12 @@ body {
 }
 
 #main {
-  background-color: $light-blue;
+  background-color: $light-blue-teal;
+
+  @include respond-to(medium) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .page--basic > .main-content {
@@ -13,7 +18,7 @@ body {
 
 // INITIAL TESTING
 .cream-bg {
-  background: $cream;
+  background: $tan;
 }
 
 .container {

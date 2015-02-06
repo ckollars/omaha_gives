@@ -3,3 +3,41 @@
   width: 32px;
   height: 29px;
 }
+
+.icon--circles {
+  position: absolute;
+}
+
+.icon--circles__header5 {
+  @include background-image-retina('../img/og-circles_header5', png, 161px, 153px);
+  width: 161px;
+  height: 153px;
+  top: 20%;
+  left: 1%;
+}
+
+.icon--circles__header1 {
+  @include background-image-retina('../img/og-circles_header1', png, 167px, 148px);
+  width: 167px;
+  height: 148px;
+  top: 30%;
+  right: 2%;
+}
+
+.icon--facebook:before {
+  @include background-image-retina('../img/og-icon_facebook', png, 16px, 16px);
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.icon--twitter:before {
+  @include background-image-retina('../img/og-icon_twitter', png, 16px, 16px);
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  content: '';
+}

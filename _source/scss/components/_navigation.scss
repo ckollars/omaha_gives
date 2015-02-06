@@ -33,11 +33,16 @@ nav > ul,
   }
 
   a {
+    @include transition(color 0.2s);
     text-decoration: none;
     color: $red;
 
     &:hover {
       color: $turquoise;
+    }
+
+    .nav__footer & {
+      color: $white;
     }
   }
 }
@@ -62,3 +67,45 @@ nav > ul,
     margin: 0;
   }
 }
+
+.nav__footer {
+  margin-top: 105px;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

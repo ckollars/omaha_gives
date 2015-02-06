@@ -1,0 +1,86 @@
+.footer--about {
+  @include clearfix;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background: $tan url(../img/bg-texture_header.jpg) repeat-x center top;
+  overflow: hidden;
+}
+
+.footer--content {
+  padding-top: 86px;
+  padding-bottom: 20px;
+  color: $white;
+
+  p{
+    @include body-copy-size(15px, 24px);
+    margin: 0;
+
+    a {
+      display: inline-block;
+      margin-left: 10px;
+      color: $white;
+      // text-decoration: none;
+    }
+  }
+}
+
+.copy--uppercase {
+  text-transform: uppercase;
+}
+
+.logo--og__footer {
+  @include background-image-retina('../img/og-logo-header', png, 400px, 171px);
+  float: left;
+  width: 400px;
+  height: 171px;
+  background-size: cover;
+  text-indent: em(-9999px);
+  white-space: nowrap;
+  overflow: hidden;
+
+  @include respond-to(large) {
+    margin-left: 75px;
+  }
+}
+
+.footer--about__copy {
+  @include body-copy-size(20px, 30px);
+  float: right;
+  max-width: 486px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: $blue-teal;
+
+  @include respond-to(large) {
+    margin-right: 75px;
+  }
+}
+
+.logo--ocf {
+  @include background-image-retina('../img/ocf-logo-white', png, 318px, 110px);
+  float: left;
+  width: 318px;
+  height: 110px;
+
+  @include respond-to(large) {
+    margin-left: 57px;
+  }
+}
+
+.social__footer {
+  float: right;
+  width: 522px;
+
+  @include respond-to(large) {
+    margin-right: 57px;
+  }
+  a {
+    float: left;
+    width: 49%;
+    margin-left: 2%;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

@@ -8,6 +8,7 @@
   text-align: center;
   color: $white;
   cursor: pointer;
+  overflow: hidden;
 
   &:hover {
     background-color: $dark_turquoise;
@@ -49,3 +50,20 @@
     color: $white;
   }
 }
+
+.btn--facebook,
+.btn--twitter {
+  @extend .btn--large;
+  background-color: $white;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.btn--facebook {
+  color: $fb-blue;
+}
+
+.btn--twitter {
+  color: $tw-blue;
+}
+

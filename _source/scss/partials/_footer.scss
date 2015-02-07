@@ -29,10 +29,11 @@
 }
 
 .logo--og__footer {
-  @include background-image-retina('../img/og-logo-header', png, 400px, 171px);
+  @include background-image-retina('../img/og-logo-larger', png, 400px, 171px);
   float: left;
   width: 400px;
   height: 171px;
+  background-repeat: no-repeat;
   background-size: cover;
   text-indent: em(-9999px);
   white-space: nowrap;

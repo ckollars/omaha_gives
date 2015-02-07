@@ -53,10 +53,12 @@
 
 .btn--facebook,
 .btn--twitter {
-  @extend .btn--large;
+  padding: 24px 16px;
+  font-size: em(20px);
   background-color: $white;
   text-decoration: none;
   text-transform: none;
+
 }
 
 .btn--facebook {
@@ -67,3 +69,28 @@
   color: $tw-blue;
 }
 
+
+/**
+ * $MOBILE MENU
+ */
+.btn--mobile-menu {
+  @include background-image-retina('../img/og-icon_menu', png, 24px, 24px);
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  background-color: $red;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  text-indent: em(-9999px);
+  white-space: nowrap;
+  overflow: hidden;
+
+  @media (min-width: 800px) {
+    display: none;
+  }
+
+  &:hover {
+    background-color: $dark-red;
+  }
+}

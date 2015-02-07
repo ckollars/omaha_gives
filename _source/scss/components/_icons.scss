@@ -24,20 +24,25 @@
   right: 2%;
 }
 
+.icon--facebook:before,
+.icon--twitter:before {
+  display: inline-block;
+  vertical-align: sub;
+  margin-right: 7px;
+}
+
 .icon--facebook:before {
-  @include background-image-retina('../img/og-icon_facebook', png, 16px, 16px);
-  display: block;
-  width: 16px;
-  height: 16px;
+  @include background-image-retina('../img/og-icon_facebook_footer', png, 24px, 24px);
+  width: 24px;
+  height: 24px;
   background-repeat: no-repeat;
   content: '';
 }
 
 .icon--twitter:before {
-  @include background-image-retina('../img/og-icon_twitter', png, 16px, 16px);
-  display: block;
-  width: 16px;
-  height: 16px;
+  @include background-image-retina('../img/og-icon_twitter_footer', png, 24px, 24px);
+  width: 24px;
+  height: 24px;
   background-repeat: no-repeat;
   content: '';
 }

@@ -1,25 +1,50 @@
 #header {
   position: relative;
-  padding-top: 10px;
+  padding: 10px 20px 0 20px;
   background: $tan url(../img/bg-texture_header.jpg) repeat-x center top;
   overflow: hidden;
+
+  @include respond-to(large) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .wrap--header {
   position: relative;
   z-index: 1;
 }
+
 /**
  * $LOGO
  */
 .logo--header {
-  @include background-image-retina('../img/og-logo-header', png, 32px, 29px);
-  float: left;
-  width: 376px;
-  height: 153px;
+  @include background-image-retina('../img/og-logo-header', png, 280px, 114px);
+  display: block;
+  width: 280px;
+  height: 114px;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-indent: em(-9999px);
   white-space: nowrap;
   overflow: hidden;
+
+  @media (min-width: 481px) {
+    float: left;
+  }
+
+  @media screen and (min-width: 800px) {
+    @include background-image-retina('../img/og-logo-header', png, 280px, 114px);
+    width: 320px;
+    height: 130px;
+  }
+
+  @include respond-to(medium) {
+    @include background-image-retina('../img/og-logo-header', png, 376px, 153px);
+    width: 376px;
+    height: 153px;
+    background-size: inherit;
+  }
 }
 
 .logo--print {
@@ -31,7 +56,9 @@
 }
 
 // NOTE: Works for now but come back for RWD
-.background-circles {
+// temporarily hiding
+.circles--header {
+  // display: none;
   position: absolute;
   margin: auto;
   top: 0; left: 0; bottom: 0; right: 0;

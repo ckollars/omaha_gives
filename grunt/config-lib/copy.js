@@ -11,10 +11,11 @@ module.exports = {
   },
   jsdev: {
     files: [
-      { expand: true, flatten: true, cwd: '<%= pkg.config.src %>/js/libs', src: 'modernizr.js', dest: '<%= pkg.config.dev %>/js' },
-      { expand: true, flatten: true, cwd: '<%= pkg.config.src %>/js/libs', src: 'prism.js', dest: '<%= pkg.config.dev %>/js' },
-      { expand: true, flatten: true, cwd: '<%= pkg.config.src %>/js', src: 'compiled-dev.js', dest: '<%= pkg.config.dev %>/js' },
-      { expand: true, flatten: true, cwd: '<%= pkg.config.src %>/js', src: 'compiled-vendor.js', dest: '<%= pkg.config.dev %>/js' }
+      { expand: true, flatten: true, cwd: '<%= pkg.config.src %>/js/vendor', src: 'modernizr.min.js', dest: '<%= pkg.config.dev %>/js' },
+      { expand: true, flatten: true, cwd: '<%= pkg.config.src %>/bower_components/respond-minmax/dest', src: 'respond.min.js', dest: '<%= pkg.config.dev %>/js' }
+      // { expand: true, flatten: true, cwd: '<%= pkg.config.src %>/js/libs', src: 'prism.js', dest: '<%= pkg.config.dev %>/js' },
+      // { expand: true, flatten: true, cwd: '<%= pkg.config.src %>/js', src: 'compiled-dev.js', dest: '<%= pkg.config.dev %>/js' },
+      // { expand: true, flatten: true, cwd: '<%= pkg.config.src %>/js', src: 'compiled-vendor.js', dest: '<%= pkg.config.dev %>/js' }
     ]
   },
   html: {

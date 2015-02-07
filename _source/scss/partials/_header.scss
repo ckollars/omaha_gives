@@ -29,7 +29,7 @@
   white-space: nowrap;
   overflow: hidden;
 
-  @media (min-width: 481px) {
+  @media screen and (min-width: 481px) {
     float: left;
   }
 

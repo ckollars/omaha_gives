@@ -48,35 +48,28 @@ nav > ul,
 }
 
 .nav--main {
-  @media (max-width: 799px ) {
-    display: none;
-  }
-}
-
-.nav-container {
-  @media (min-width: 568px) {
+  @media screen and (min-width: 800px) {
+    clear: right;
     float: right;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
-
-
 
 /**
  * $CART NAVIGATION
  */
 .nav--cart {
-  float: left;
+  float: right;
+  margin-top: 8px;
   margin-right: 20px;
   font-size: em(42px);
   letter-spacing: 2px;
   color: $orange;
   text-align: right;
 
-  @media (min-width: 800px) {
-    margin-bottom: 46px;
+  @media screen and (min-width: 800px) {
     margin-right: 0;
-    float: none;
+    margin-top: 20px;
   }
 
   > .nav__item {
@@ -85,12 +78,13 @@ nav > ul,
   }
 }
 
+/**
+ * $FOOTER NAVIGATION
+ */
 .nav__footer {
   margin-top: 105px;
   margin-bottom: 40px;
 }
-
-
 
 
 

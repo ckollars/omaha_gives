@@ -11,8 +11,13 @@
 }
 
 .wrap--header {
+  // padding-top: 60px; // mobile
   position: relative;
   z-index: 1;
+
+  // @media screen and (min-width: 481px) {
+  //   padding-top: 0;
+  // }
 }
 
 /**

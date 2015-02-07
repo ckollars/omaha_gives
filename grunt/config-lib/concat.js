@@ -8,7 +8,7 @@ module.exports = {
     dest: '<%= pkg.config.src %>/js/compiled-vendor.js'
   },
   dev: {
-    src: ['<%= pkg.config.src %>/js/*.js', '!<%= pkg.config.src %>/js/compiled-vendor.js'],
-    dest: '<%= pkg.config.src %>/js/compiled-dev.js'
+    src: ['<%= pkg.config.src %>/js/*.js'],
+    dest: '<%= pkg.config.dev %>/js/compiled.js'
   }
 };

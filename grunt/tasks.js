@@ -19,7 +19,7 @@ module.exports = function (grunt) {
   grunt.registerTask(
     'build-scripts',
     'Build custom javascripts.',
-    ['concat:vendor', 'concat:dev']
+    ['concat:dev']
   );
 
    // Copy js scripts for development
@@ -44,7 +44,7 @@ module.exports = function (grunt) {
   grunt.registerTask(
     'server',
     'Build a development (_dev) site with watch the comand running.',
-    ['build-styles', 'copy-scripts', 'copy:images', 'copy:html', 'watch' ]
+    ['build-styles', 'build-scripts', 'copy-scripts', 'copy:images', 'copy:html', 'watch' ]
   );
 
 };

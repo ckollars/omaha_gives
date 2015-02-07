@@ -7,8 +7,8 @@ module.exports = {
     tasks: ['build-styles']
   },
   js: {
-    files: ['<%= pkg.config.src %>/js/*.js', '<%= pkg.config.src %>/js/lib/*.js'],
-    tasks: ['build-scripts', 'copy-scripts']
+    files: ['<%= pkg.config.src %>/js/*.js'],
+    tasks: ['build-scripts']
   },
   assets: {
     files: ['<%= pkg.config.src %>/img/**'],

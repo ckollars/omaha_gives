@@ -1,4 +1,3 @@
-
 body {
   background-color: $purple
 }
@@ -14,11 +13,7 @@ body {
 
 .page--basic > .main-content {
   background-color: $white;
-}
-
-// INITIAL TESTING
-.cream-bg {
-  background: $tan;
+  padding: 70px;
 }
 
 .container {
@@ -27,19 +22,8 @@ body {
   margin: 0 auto;
 }
 
-.column-half {
-  @include span(6);
 
-  &:last-child {
-    @include omega;
-  }
+// For temporary sample content & code
+.sample {
+  margin: em(60px) 0;
 }
-
-.column-thirds {
-  @include span(4);
-
-  &:last-child {
-    @include omega;
-  }
-}
-

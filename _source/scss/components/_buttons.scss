@@ -1,11 +1,13 @@
 .btn {
   @include transition(background-color 0.2s);
   display: block;
+  padding: 16px;
   background-color: $turquoise;
   border-radius: 5px;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
   color: $white;
   cursor: pointer;
   overflow: hidden;
@@ -13,12 +15,16 @@
   &:hover {
     background-color: $dark_turquoise;
   }
+
   &:active,
   .active {
     background-color: $light_turquoise;
   }
 }
 
+/**
+ * $LARGE
+ */
 .btn--large {
   padding: 20px 30px;
   font-size: em(24px);
@@ -26,11 +32,32 @@
   font-weight: 400;
 }
 
+/**
+ * $SMALL
+ */
 .btn--small {
-  padding: 16px;
   font-size: em(16px);
 }
 
+/**
+ * $RED
+ */
+.btn--red {
+  background-color: $red;
+
+  &:hover {
+    background-color: $dark-red;
+  }
+
+  &:active,
+  .active {
+    background-color: $light-red;
+  }
+}
+
+/**
+ * $SECONDARY
+ */
 .btn--secondary {
   @include transition(color 0.2s);
   padding: 16px 16px 16px 42px;
@@ -51,6 +78,9 @@
   }
 }
 
+/**
+ * $SOCIAL
+ */
 .btn--facebook,
 .btn--twitter {
   padding: 24px 16px;

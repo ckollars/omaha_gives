@@ -60,13 +60,20 @@
   }
 }
 
-// NOTE: Works for now but come back for RWD
-// temporarily hiding
+/**
+ * $CIRCLES
+ */
 .circles--header {
-  display: none;
   position: absolute;
-  margin: auto;
-  top: 0; left: 0; bottom: 0; right: 0;
+  top: 0;
+  // margin: auto;
+  // top: 0; left: 0; bottom: 0; right: 0;
+  left: 50%;
+  margin-left: -800px;
   width: 1600px;
   height: 100%;
+}
+
+.circles--footer {
+
 }

@@ -59,6 +59,11 @@ h6 {
 
 .page-title--header {
   margin: rem(48px) 0;
+
+  @include respond-to(mobile) {
+    font-size: em(56px);
+    margin: rem(32px) 0;
+  }
 }
 
 // Subheads

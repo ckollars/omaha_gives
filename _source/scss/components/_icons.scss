@@ -4,26 +4,6 @@
   height: 29px;
 }
 
-.icon--circles {
-  position: absolute;
-}
-
-.icon--circles__header5 {
-  @include background-image-retina('../img/og-circles_header5', png, 161px, 153px);
-  width: 161px;
-  height: 153px;
-  top: 20%;
-  left: 1%;
-}
-
-.icon--circles__header1 {
-  @include background-image-retina('../img/og-circles_header1', png, 167px, 148px);
-  width: 167px;
-  height: 148px;
-  top: 30%;
-  right: 2%;
-}
-
 .icon--facebook:before,
 .icon--twitter:before {
   display: inline-block;
@@ -46,3 +26,51 @@
   background-repeat: no-repeat;
   content: '';
 }
+
+/**
+ * $BACKGROUND CIRCLES
+ */
+.icon--circles {
+  position: absolute;
+}
+
+.icon--circles__header5 {
+  @include background-image-retina('../img/og-circles_header5', png, 161px, 153px);
+  width: 161px;
+  height: 153px;
+  top: 20%;
+  left: 1%;
+}
+
+.icon--circles__header1 {
+  @include background-image-retina('../img/og-circles_header1', png, 167px, 148px);
+  width: 167px;
+  height: 148px;
+  top: 30%;
+  right: 2%;
+}
+
+.icon--circles__footer1 {
+  @include background-image-retina('../img/og-circles_footer1', png, 167px, 148px);
+  width: 211px;
+  height: 187px;
+  top: -10%;
+  left: 2%;
+}
+
+.icon--circles__footer2 {
+  @include background-image-retina('../img/og-circles_footer2', png, 167px, 148px);
+  width: 162px;
+  height: 154px;
+  top: 80%;
+  left: 40%;
+}
+
+.icon--circles__footer3 {
+  @include background-image-retina('../img/og-circles_footer3', png, 167px, 148px);
+  width: 179px;
+  height: 210px;
+  top: 30%;
+  right: 2%;
+}
+

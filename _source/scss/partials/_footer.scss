@@ -7,6 +7,8 @@
 
 .footer--about {
   @include clearfix;
+  position: relative;
+  z-index: 1;
   padding: 50px 20px 60px 20px;
   background: $tan url(../img/bg-texture_header.jpg) repeat-x center top;
   overflow: hidden;
@@ -164,4 +166,17 @@
       text-decoration: none;
     }
   }
+}
+
+/**
+ * $CIRCLES
+ */
+.circles--footer {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  margin-left: -800px;
+  width: 1600px;
+  height: 100%;
 }

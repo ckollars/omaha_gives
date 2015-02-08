@@ -23,14 +23,6 @@ nav > ul,
   }
 }
 
-.menu--main-menu {
-  display: none;
-
-  @include respond-to(small) {
-    display: block;
-  }
-}
-
 .nav__item {
   @include transition(color 0.2s);
   color: $red;
@@ -55,11 +47,63 @@ nav > ul,
   }
 }
 
+/**
+ * $MAIN MENU
+ */
 #main-nav {
   @media screen and (min-width: 800px) {
     clear: right;
     float: right;
-    margin-top: 40px;
+    margin-top: 110px;
+  }
+}
+
+.menu--main-menu {
+  display: none;
+
+  // NOTE: POSSIBLE SOLUTION FOR MOBILE MENU
+  // position: fixed;
+  // z-index: 100;
+  // width: 300px;
+  // top: 86px;
+  // right: 20px;
+  // background-color: $red;
+
+  // > .nav__item {
+  //   display: block;
+  //   margin: 0;
+  //   border-top: 1px solid $dark-red;
+
+  //   &:first-child{ border-top: none; }
+
+
+  //   a {
+  //     display: block;
+  //     padding: 16px;
+  //     color: $white;
+  //   }
+  // }
+
+  // NOTE: POSSIBLE SOLUTION FOR MOBILE MENU
+  &:after {
+    display: none;
+    bottom: 100%;
+    right: 8px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba($red, 0);
+    border-bottom-color: $red;
+    border-width: 15px;
+    margin-left: -15px;
+  }
+
+
+  @media screen and (min-width: 800px) {
+    display: block;
   }
 }
 
@@ -72,10 +116,13 @@ nav > ul,
   margin-right: 20px;
   font-size: em(42px);
   letter-spacing: 2px;
-  color: $orange;
   text-align: right;
+  color: $orange;
+
 
   @media screen and (min-width: 800px) {
+    position: absolute;
+    right: 0;
     margin-right: 0;
     margin-top: 20px;
   }

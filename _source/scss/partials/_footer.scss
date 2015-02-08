@@ -48,23 +48,55 @@
 }
 
 .logo--og__footer {
-  @include background-image-retina('../img/og-logo-larger', png, 400px, 171px);
-  float: left;
-  width: 400px;
-  height: 171px;
+  @include background-image-retina('../img/og-logo-larger', png, 280px, 113px);
+  width: 280px;
+  height: 113px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   text-indent: em(-9999px);
   white-space: nowrap;
   overflow: hidden;
 
+  @media screen and (min-width: 480px) {
+    @include background-image-retina('../img/og-logo-larger', png, 400px, 171px);
+    width: 400px;
+    height: 171px;
+  }
+
+  @media screen and (min-width: 800px) {
+    @include background-image-retina('../img/og-logo-larger', png, 320px, 130px);
+    width: 320px;
+    height: 130px;
+    float: left;
+  }
+
+  @include respond-to(medium) {
+    @include background-image-retina('../img/og-logo-larger', png, 400px, 171px);
+    width: 400px;
+    height: 171px;
+  }
 }
 
 .footer--about__copy {
-  float: right;
-  max-width: 471px;
+  padding: 0 5%;
   margin-top: 30px;
   margin-bottom: 0;
+
+  @media screen and (min-width: 568px) {
+    padding: 0 10%;
+  }
+
+  @media screen and (min-width: 800px) {
+    float: right;
+    max-width: 400px;
+    padding: 0;
+  }
+
+  @include respond-to(medium) {
+    max-width: 471px;
+  }
+
 }
 
 .logo--ocf {

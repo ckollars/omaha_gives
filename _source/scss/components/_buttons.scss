@@ -79,6 +79,13 @@
 }
 
 /**
+ * $CART
+ */
+.btn--cart {
+  cursor: pointer;
+}
+
+/**
  * $SOCIAL
  */
 .btn--facebook,
@@ -125,7 +132,6 @@
  */
 .btn--mobile-menu {
   @include background-image-retina('../img/og-icon_menu', png, 24px, 24px);
-  @include hide-text;
   display: block;
   float: right;
   width: 48px;
@@ -135,16 +141,10 @@
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 5px;
-  // text-indent: em(-9999px);
-  // white-space: nowrap;
-  // overflow: hidden;
-  cursor: pointer;
+  text-indent: em(-9999px);
+  white-space: nowrap;
 
   @media screen and (min-width: 800px) {
     display: none;
-  }
-
-  &:hover {
-    background-color: $dark-red;
   }
 }

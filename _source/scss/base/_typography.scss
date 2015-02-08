@@ -109,7 +109,9 @@ p, .p {
 /**
  * $QUOTES
  */
-blockquote, .quote {
+blockquote,
+.quote,
+q {
   margin: 0;
   font-size: em(24px);
   line-height: rem(36px);

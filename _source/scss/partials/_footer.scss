@@ -18,33 +18,32 @@
 }
 
 .footer--content {
-  padding: 86px 20px 20px 20px;
+  padding: 40px 20px;
   color: $white;
 
+  @include respond-to(small) {
+    padding-top: 86px;
+  }
   @include respond-to(large) {
     padding-left: 0;
     padding-right: 0;
   }
 
   p{
-    @include body-copy-size(15px, 24px);
-    margin: 0;
+    // @include body-copy-size(15px, 24px);
+    // margin: 0;
 
-    a {
-      @include transition(text-decoration 0.2s);
-      display: inline-block;
-      margin-left: 10px;
-      color: $white;
+    // a {
+    //   @include transition(text-decoration 0.2s);
+    //   display: inline-block;
+    //   margin-left: 10px;
+    //   color: $white;
 
-      &:hover {
-        text-decoration: none;
-      }
-    }
+    //   &:hover {
+    //     text-decoration: none;
+    //   }
+    // }
   }
-}
-
-.copy--uppercase {
-  text-transform: uppercase;
 }
 
 .logo--og__footer {
@@ -101,22 +100,68 @@
 
 .logo--ocf {
   @include background-image-retina('../img/ocf-logo-white', png, 318px, 110px);
-  float: left;
   width: 318px;
   height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 599px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 600px) {
+    float: left;
+  }
 }
 
 .social__footer {
-  float: right;
-  width: 522px;
+
+  @media screen and (min-width: 600px) {
+    float: right;
+    max-width: 400px;
+  }
+
+  @include respond-to(medium) {
+    width: 522px;
+    max-width: none;
+  }
 
   a {
-    float: left;
-    width: 49%;
-    margin-left: 2%;
+    width: 100%;
+    margin-bottom: 10px;
+
+    @include respond-to(medium) {
+      float: left;
+      width: 49%;
+      margin-left: 2%;
+    }
 
     &:first-child {
       margin-left: 0;
+    }
+  }
+}
+
+.footer--address,
+.footer--copyright {
+  @include body-copy-size(15px, 24px);
+  margin: 0;
+  text-align: center;
+
+  @include respond-to(small) {
+    text-align: left;
+  }
+}
+
+.footer--copyright {
+  a {
+    @include transition(text-decoration 0.2s);
+    display: inline-block;
+    margin-left: 10px;
+    color: $white;
+
+    &:hover {
+      text-decoration: none;
     }
   }
 }

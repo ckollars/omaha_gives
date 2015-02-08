@@ -137,7 +137,17 @@ nav > ul,
  * $FOOTER NAVIGATION
  */
 .nav__footer {
-  margin: 105px 0 40px 0;
+  margin: 40px 0 20px 0;
+  text-align: center;
+
+  @include respond-to(small) {
+    margin-top: 105px;
+    text-align: left;
+  }
+
+  .nav__item {
+    margin-bottom: 20px;
+  }
 }
 
 

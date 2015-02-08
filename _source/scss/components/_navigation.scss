@@ -23,6 +23,14 @@ nav > ul,
   }
 }
 
+.menu--main-menu {
+  display: none;
+
+  @include respond-to(small) {
+    display: block;
+  }
+}
+
 .nav__item {
   @include transition(color 0.2s);
   color: $red;
@@ -47,7 +55,7 @@ nav > ul,
   }
 }
 
-.nav--main {
+#main-nav {
   @media screen and (min-width: 800px) {
     clear: right;
     float: right;
@@ -82,8 +90,7 @@ nav > ul,
  * $FOOTER NAVIGATION
  */
 .nav__footer {
-  margin-top: 105px;
-  margin-bottom: 40px;
+  margin: 105px 0 40px 0;
 }
 
 

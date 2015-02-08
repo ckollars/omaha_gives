@@ -1,25 +1,44 @@
+.container__footer {
+  @include respond-to(large) {
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+}
+
 .footer--about {
   @include clearfix;
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding: 50px 20px 60px 20px;
   background: $tan url(../img/bg-texture_header.jpg) repeat-x center top;
   overflow: hidden;
+
+  @include respond-to(large) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .footer--content {
-  padding-top: 86px;
-  padding-bottom: 20px;
+  padding: 86px 20px 20px 20px;
   color: $white;
+
+  @include respond-to(large) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   p{
     @include body-copy-size(15px, 24px);
     margin: 0;
 
     a {
+      @include transition(text-decoration 0.2s);
       display: inline-block;
       margin-left: 10px;
       color: $white;
-      // text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
@@ -39,22 +58,13 @@
   white-space: nowrap;
   overflow: hidden;
 
-  @include respond-to(large) {
-    margin-left: 75px;
-  }
 }
 
 .footer--about__copy {
-  @include body-copy-size(20px, 30px);
   float: right;
-  max-width: 486px;
+  max-width: 471px;
   margin-top: 30px;
   margin-bottom: 0;
-  color: $blue-teal;
-
-  @include respond-to(large) {
-    margin-right: 75px;
-  }
 }
 
 .logo--ocf {
@@ -62,19 +72,12 @@
   float: left;
   width: 318px;
   height: 110px;
-
-  @include respond-to(large) {
-    margin-left: 57px;
-  }
 }
 
 .social__footer {
   float: right;
   width: 522px;
 
-  @include respond-to(large) {
-    margin-right: 57px;
-  }
   a {
     float: left;
     width: 49%;

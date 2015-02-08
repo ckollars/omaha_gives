@@ -4,6 +4,7 @@ body {
 
 #main {
   background-color: $light-blue-teal;
+  padding: 30px 20px;
 
   @include respond-to(medium) {
     padding-top: 60px;
@@ -13,7 +14,11 @@ body {
 
 .page--basic > .main-content {
   background-color: $white;
-  padding: 70px;
+  padding: 20px;
+
+  @include respond-to(large) {
+    padding: 70px;
+  }
 }
 
 .container {

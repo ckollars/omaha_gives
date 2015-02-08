@@ -80,6 +80,6 @@
 
 @mixin body-copy-size($font-size: 16px, $line-height: 30px) {
   font-size: em($font-size);
-  line-height: em($line-height);
+  line-height: rem($line-height);
 }
 

@@ -1,13 +1,13 @@
 html {
   font-family: $base-font-family;
-  font-size: 84%;
+  font-size: 90%;
 
-  @include respond-to(mobile){
-    font-size: 80%;
-  }
-  @include respond-to(small){
-    font-size: 90%;
-  }
+  // @include respond-to(mobile){
+  //   font-size: 80%;
+  // }
+  // @include respond-to(small){
+  //   font-size: 90%;
+  // }
   @include respond-to(medium){
     font-size: 100%;
   }

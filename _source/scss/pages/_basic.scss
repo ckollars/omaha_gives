@@ -5,11 +5,14 @@ body {
 
 #main {
   background-color: $light-blue-teal;
-  padding: 30px 20px;
+  padding: 20px 10px;
 
   @include respond-to(medium) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 30px 20px;
+  }
+  @media screen and (min-width: 1141px) {
+    padding: 60px 0;
+    // padding: 60px;
   }
 }
 

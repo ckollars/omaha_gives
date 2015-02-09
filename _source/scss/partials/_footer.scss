@@ -8,7 +8,7 @@
 .footer--about {
   @include clearfix;
   position: relative;
-  z-index: 1;
+  // z-index: 1;
   padding: 50px 20px 60px 20px;
   background: $tan url(../img/bg-texture_header.jpg) repeat-x center top;
   overflow: hidden;
@@ -33,9 +33,9 @@
 }
 
 .logo--og__footer {
-  @include background-image-retina('../img/og-logo-larger', png, 280px, 113px);
+  @include background-image-retina('../img/og-logo-larger', png, 280px, 114px);
   width: 280px;
-  height: 113px;
+  height: 114px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,11 +43,11 @@
   white-space: nowrap;
   overflow: hidden;
 
-  @media screen and (min-width: 480px) {
-    @include background-image-retina('../img/og-logo-larger', png, 400px, 171px);
-    width: 400px;
-    height: 171px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   @include background-image-retina('../img/og-logo-larger', png, 400px, 171px);
+  //   width: 400px;
+  //   height: 171px;
+  // }
 
   @media screen and (min-width: 800px) {
     @include background-image-retina('../img/og-logo-larger', png, 320px, 130px);
@@ -57,9 +57,9 @@
   }
 
   @include respond-to(medium) {
-    @include background-image-retina('../img/og-logo-larger', png, 400px, 171px);
-    width: 400px;
-    height: 171px;
+    @include background-image-retina('../img/og-logo-larger', png, 402px, 163px);
+    width: 402px;
+    height: 163px;
   }
 }
 
@@ -157,10 +157,14 @@
  */
 .circles--footer {
   position: absolute;
-  z-index: -1;
+  // z-index: -1;
   top: 0;
   left: 50%;
   margin-left: -800px;
   width: 1600px;
   height: 100%;
+
+  @include respond-to(mobile) {
+    display: none;
+  }
 }

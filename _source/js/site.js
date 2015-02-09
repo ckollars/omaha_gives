@@ -1,10 +1,10 @@
 var navButton = $('.btn--mobile-menu'),
-  navigation = $('.nav--main');
+  navigation = $('#main-nav');
 
 $(function () {
 
   navButton.on('click', function () {
-    navigation.addClass('show-nav');
+    navigation.toggleClass('show-menu');
   });
 
 });

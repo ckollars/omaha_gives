@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/main.css">
 
     <!-- Add Modernizr below -->
-    <script src="js/modernizr.js" async></script>
+    <script src="js/modernizr.min.js" async></script>
+    <script src="js/respond.min.js" async></script>
   </head>
   <body>
     <header id="header">
@@ -21,19 +22,18 @@
             <img class="logo--print" src="img/og-logo-header.png" alt="Omaha Gives logo">
             <h1>Omaha Gives!</h1>
           </a>
-          <div class="nav-container">
-            <div class="nav nav--cart">
-              <div class="nav__item">$0</div>
-              <div class="nav__item icon--cart"></div>
-            </div>
-            <nav class="nav nav--main" role="navigation">
-              <ul>
-                <li class="nav__item"><a href="#">Nonprofits</a></li>
-                <li class="nav__item"><a href="#">Leaderboard</a></li>
-                <li class="nav__item"><a href="#">Rules</a></li>
-                <li class="nav__item"><a href="#">About</a></li>
-              </ul>
-            </nav>
+          <nav id="main-nav" class="nav" role="navigation">
+            <span class="btn btn--mobile-menu">Menu</span>
+            <ul class="menu--main-menu">
+              <li class="nav__item"><a href="#">Nonprofits</a></li>
+              <li class="nav__item"><a href="#">Leaderboard</a></li>
+              <li class="nav__item"><a href="#">Rules</a></li>
+              <li class="nav__item"><a href="#">About</a></li>
+            </ul>
+          </nav>
+          <div class="nav nav--cart">
+            <div class="nav__item">$2,890.00</div>
+            <div class="nav__item icon--cart btn--cart"></div>
           </div>
         </div>
         <div class="container">
@@ -48,26 +48,93 @@
     </header>
     <div id="main" class="page--basic" role="main">
       <div class="container main-content">
-        <span>typography</span>
+        <code>h1</code>
         <h1>Let's Give Together</h1>
+        <code>h2</code>
         <h2>Let's Give Together</h2>
+        <code>h3</code>
         <h3>Let's Give Together</h3>
+        <code>h4</code>
         <h4>Let's Give Together</h4>
+        <code>h5</code>
         <h5>Let's Give Together</h5>
+        <code>h6</code>
         <h6>Let's Give Together</h6>
+        <div class="sample">
+          <pre><code>hr</code></pre>
+          <hr>
+        </div>
+        <!-- Buttons -->
+        <div class="sample">
+          <code>.btn btn--large</code>
+          <a class="btn btn--large" href="">
+            <div><span>Large Button</span></div>
+          </a>
+          <hr>
+          <code>.btn .btn--small</code>
+          <a class="btn btn--small" href="">
+            <div><span>Small Button</span></div>
+          </a>
+          <hr>
+          <code>.btn .btn--small .btn--red</code>
+          <a class="btn btn--small btn--red" href="">
+            <div><span>Small Button</span></div>
+          </a>
+        </div>
+        <!-- Copy -->
+        <div class="sample">
+          <h6>Body Copy</h6>
+          <p>The Nebraska Humane Society is one of the 10 largest shelters in the country. Caring staff and volunteers touch the lives of 25,000 animals annually.</p>
+        </div>
+        <div class="sample">
+          <code>.copy-large</code>
+          <p class="copy-large">The Nebraska Humane Society is one of the 10 largest shelters in the country. Caring staff and volunteers touch the lives of 25,000 animals annually.</p>
+        </div>
+        <div class="sample">
+          <code>.copy-small</code>
+          <p class="copy-small">The Nebraska Humane Society is one of the 10 largest shelters in the country. Caring staff and volunteers touch the lives of 25,000 animals annually.</p>
+        </div>
+        <div class="sample">
+          <code>blockquote</code>, <code>q</code>, <code>.quote</code>
+          <blockquote>Effective and efficient transportation, particularly in the Northwest corridor, is critical to the University of Colorado's ability to continue its contributions to our state and to advance our economy, health and culture of Colorado and beyond.</blockquote>
+        </div>
+        <div class="sample">
+          <code>.subhead--large</code>
+          <p class="subhead--large">
+            the nonprofits
+          </p>
+        </div>
+        <div class="sample">
+          <code>.subhead</code>
+          <p class="subhead">
+            Search for nonprofits
+          </p>
+        </div>
+        <div class="sample">
+          <code>.subhead--small</code>
+          <p class="subhead--small">
+            Food Bank for the Heartland
+          </p>
+        </div>
       </div>
+
     </div>
     <footer id="footer">
       <div class="footer--about">
-        <div class="container">
+        <div class="container container__footer">
           <div class="logo--og__footer">
             <img class="logo--print" src="img/og-logo-header.png" alt="Omaha Gives! logo">
           </div>
-          <p class="footer--about__copy">Omaha Gives! is an annual 24-hour charitable challenge to benefit metro-area nonprofits. This community give-together begins at midnight on May 20 with a minimum gift of only $10. We've got hourly drawings, prizes, and bonus dollars to boost your gifts. So gather your circles, schedule your gifts, and get ready to cheer for your favorite nonprofits throughout the day.</p>
+          <p class="footer--about__copy copy-large">Omaha Gives! is an annual 24-hour charitable challenge to benefit metro-area nonprofits. This community give-together begins at midnight on May 20 with a minimum gift of only $10. We've got hourly drawings, prizes, and bonus dollars to boost your gifts. So gather your circles, schedule your gifts, and get ready to cheer for your favorite nonprofits throughout the day.</p>
+        </div>
+        <div class="circles--footer">
+          <div class="icon--circles icon--circles__footer1"></div>
+          <div class="icon--circles icon--circles__footer2"></div>
+          <div class="icon--circles icon--circles__footer3"></div>
         </div>
       </div>
       <div class="footer--content">
-        <div class="container">
+        <div class="container container__footer">
           <div class="logo--ocf">
             <img class="logo--print" src="img/ocf-logo-white.png" alt="Omaha Community Foundation logo">
           </div>
@@ -76,7 +143,7 @@
             <a class="btn btn--twitter icon--twitter" href="https://twitter.com/omahafoundation">Follow us on Twitter</a>
           </div>
         </div>
-        <div class="container">
+        <div class="container container__footer">
           <div class="nav nav__footer">
             <nav>
               <ul>
@@ -89,10 +156,13 @@
               </ul>
             </nav>
           </div>
-          <p class="copy--uppercase">302 South 36th Street  Suite 100  Omaha, NE 68131</p>
-          <p>&copy;2015 All rights reserved <a href="">Privacy Policy</a> <a href="">Terms of Use</a></p>
+          <p class="footer--address copy--uppercase">302 South 36th Street  Suite 100  Omaha, NE 68131</p>
+          <p class="footer--copyright">&copy;2015 All rights reserved <a href="">Privacy Policy</a> <a href="">Terms of Use</a></p>
         </div>
       </div>
     </footer>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/compiled.js" async></script>
   </body>
 </html>

@@ -40,6 +40,11 @@
   height: 153px;
   top: 20%;
   left: 1%;
+
+  .circles--header-home & {
+    top: 30%;
+    left: 80%;
+  }
 }
 
 .icon--circles__header1 {
@@ -48,6 +53,27 @@
   height: 148px;
   top: 30%;
   right: 2%;
+
+  .circles--header-home & {
+    top: 35%;
+    right: 81%;
+  }
+}
+
+.icon--circles__header2 {
+  background: url(../img/og-circles_header2.png) no-repeat;
+  width: 170px;
+  height: 232px;
+  top: 76%;
+  left: 21%;
+}
+
+.icon--circles__header4 {
+  background: url(../img/og-circles_header4.png) no-repeat;
+  width: 239px;
+  height: 136px;
+  top: 66%;
+  left: 63%;
 }
 
 .icon--circles__footer1 {

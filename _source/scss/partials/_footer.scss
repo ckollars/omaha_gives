@@ -5,6 +5,13 @@
   }
 }
 
+.footer--twitter {
+  @include respond-to(large) {
+    padding-left: 57px;
+    padding-right: 0;
+  }
+}
+
 .footer--about {
   @include clearfix;
   position: relative;
@@ -29,37 +36,6 @@
   @include respond-to(large) {
     padding-left: 0;
     padding-right: 0;
-  }
-}
-
-.logo--og__footer {
-  @include background-image-retina('../img/og-logo-larger', png, 280px, 114px);
-  width: 280px;
-  height: 114px;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-indent: em(-9999px);
-  white-space: nowrap;
-  overflow: hidden;
-
-  // @media screen and (min-width: 480px) {
-  //   @include background-image-retina('../img/og-logo-larger', png, 400px, 171px);
-  //   width: 400px;
-  //   height: 171px;
-  // }
-
-  @media screen and (min-width: 800px) {
-    @include background-image-retina('../img/og-logo-larger', png, 320px, 130px);
-    width: 320px;
-    height: 130px;
-    float: left;
-  }
-
-  @include respond-to(medium) {
-    @include background-image-retina('../img/og-logo-larger', png, 402px, 163px);
-    width: 402px;
-    height: 163px;
   }
 }
 
@@ -100,6 +76,9 @@
   }
 }
 
+/**
+ * $FOOTER SOCIAL BUTTONS
+ */
 .social__footer {
 
   @media screen and (min-width: 600px) {
@@ -166,5 +145,132 @@
 
   @include respond-to(mobile) {
     display: none;
+  }
+}
+
+/**
+ * $OMAHA GIVES FOOTER LOGO
+ */
+.logo--og__footer {
+  @include background-image-retina('../img/og-logo-larger', png, 280px, 114px);
+  width: 280px;
+  height: 114px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-indent: em(-9999px);
+  white-space: nowrap;
+  overflow: hidden;
+
+
+
+  @media screen and (min-width: 800px) {
+    @include background-image-retina('../img/og-logo-larger', png, 320px, 130px);
+    width: 320px;
+    height: 130px;
+    float: left;
+
+    .twitter-callout & {
+      @include background-image-retina('../img/og-logo-home-larger', png, 486px, 197px);
+      width: 402px;
+      height: 163px;
+    }
+  }
+
+  @include respond-to(medium) {
+    @include background-image-retina('../img/og-logo-larger', png, 402px, 163px);
+    width: 402px;
+    height: 163px;
+
+
+  }
+
+  @media screen and (min-width: 1080px) {
+    .twitter-callout & {
+      @include background-image-retina('../img/og-logo-home-larger', png, 486px, 197px);
+      width: 486px;
+      height: 197px;
+    }
+  }
+
+  .twitter-callout & {
+    float: none;
+    margin: 0;
+
+    @media screen and (min-width: 568px) and (max-width: 799px) {
+      @include background-image-retina('../img/og-logo-home-larger', png, 486px, 197px);
+      width: 486px;
+      height: 197px;
+    }
+
+  }
+}
+
+/**
+ * $TWITTER FOOTER - HOME
+ */
+.twitter-timeline {
+  // display: none;
+  position: relative;
+
+
+  @media screen and (min-width: 320px) and (max-width: 799px) {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 800px) {
+    float: right;
+    display: block;
+    width: 340px;
+  }
+
+  @include respond-to(medium) {
+    display: block;
+    width: 484px
+  }
+}
+
+.footer--twitter {
+  position: relative;
+  z-index: 3;
+}
+
+.twitter-callout {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 568px) and (max-width: 799px) {
+    width: 490px;
+  }
+
+  @media screen and (min-width: 800px) {
+    float: left;
+     width: 400px;
+  }
+
+  @media screen and (min-width: 1080px) {
+    width: 490px;
+  }
+
+  h4 {
+    margin-top: 30px;
+    font-size: em(30px);
+    line-height: rem(42px);
+
+    @media screen and (min-width: 640px) and (max-width: 799px) {
+      margin-left: 60px;
+    }
+
+    @media screen and (min-width: 1080px) {
+      padding: 0 70px;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 700;
+    }
   }
 }

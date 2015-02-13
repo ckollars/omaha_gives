@@ -1,0 +1,129 @@
+.sponsors {
+  padding: 30px 20px;
+  text-align: center;
+
+  @include respond-to(small) {
+    padding: 110px 0;
+  }
+
+  img {
+    display: inline-block;
+    margin: rem(32px) 0 rem(64px);
+  }
+
+  .subhead:last-child {
+    margin-bottom: 0;
+
+    > img {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.info-why {
+  padding: 80px 20px;
+  background: $tan url(../img/bg-texture_header.jpg) repeat-x center top;
+  text-align: center;
+
+  h4 {
+    padding: 0 6%;
+    line-height: rem(48px);
+
+    @include respond-to(small) {
+      padding: 0 14%;
+    }
+  }
+
+  .btn--large {
+    margin: 20px 0;
+  }
+
+}
+
+.info-what {
+  padding: 80px 30px;
+  background-image: url(../img/og-photodrop.jpg);
+  background-repeat: repeat-x;
+  background-position: center top;
+
+  @include respond-to(mobile) {
+    background-position: center center;
+  }
+
+  @include respond-to(small) {
+    padding: 140px 30px;
+  }
+
+  p {
+    margin: auto;
+    max-width: 690px;
+    font-size: em(28px);
+    line-height: rem(42px);
+    font-weight: 300;
+    text-align: center;
+    color: $white;
+
+    @media screen and (max-width: 360px) {
+      font-size: em(21px);
+      line-height: rem(36px);
+    }
+
+    @include respond-to(small) {
+      font-size: em(32px);
+      line-height: rem(48px);
+    }
+
+    @include respond-to(medium) {
+      font-size: em(36px);
+      line-height: rem(48px);
+    }
+  }
+}
+
+.column {
+  @include span(4 of 12);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0 57px;
+
+  @include respond-to(mobile) {
+    @include span(1 of 1);
+    padding: 0 20px;
+    margin: 10px 0;
+  }
+
+  @include respond-to(small) {
+    padding: 0 26px;
+  }
+
+  @media (min-width: 1040px) {
+    min-height: 240px;
+  }
+
+  @media (min-width: 1140px) {
+    padding: 0 13px;
+    min-height: 0;
+  }
+  img {
+    display: inline-block;
+
+  }
+
+  &.last {
+    margin-right: 0;
+  }
+
+  .h5 {
+    margin-bottom: rem(16px);
+
+    @include respond-to(small) {
+      margin-bottom: rem(16px);
+      margin-top: rem(32px);
+    }
+  }
+}
+
+.btn--inline {
+  display: inline-block;
+}
+

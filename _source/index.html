@@ -14,7 +14,7 @@
     <script src="js/modernizr.min.js" async></script>
     <script src="js/respond.min.js" async></script>
   </head>
-  <body>
+  <body class="home">
     <header id="header">
       <div class="wrap--header">
         <div class="container">
@@ -22,6 +22,20 @@
             <img class="logo--print" src="img/og-logo-header.png" alt="Omaha Gives logo">
             <h1>Omaha Gives!</h1>
           </a>
+          <nav id="user-nav" class="">
+            <a href="" class="btn--login">Login</a>
+              <ul class="menu-signup">
+                <li>
+                  <a href="" class="btn btn--small btn--red btn--signup">
+                    <div><span>Signup</span></div>
+                  </a>
+                  <ul class="menu-signup--submenu">
+                    <li><a href="" class="btn btn--red">Donor</a></li>
+                    <li><a href="" class="btn btn--red">Nonprofit</a></li>
+                  </ul>
+                </li>
+              </ul>
+          </nav>
           <nav id="main-nav" class="nav" role="navigation">
             <span class="btn btn--mobile-menu">Menu</span>
             <ul class="menu--main-menu">
@@ -31,10 +45,10 @@
               <li class="nav__item"><a href="#">About</a></li>
             </ul>
           </nav>
-          <div class="nav nav--cart">
+          <!-- <div class="nav nav--cart">
             <div class="nav__item">$2,890.00</div>
             <div class="nav__item icon--cart btn--cart"></div>
-          </div>
+          </div> -->
         </div>
         <div class="container">
           <div class="counter">
@@ -42,7 +56,7 @@
             <h1 style="font-size: 106px;margin-bottom: 0;color: #daa648;">120:05:35:20</h1>
           </div>
           <a href="" class="btn btn--large" style="max-width: 340px;margin: 20px auto;">Find a Nonprofit</a>
-          <p style="text-align: center;" class="copy-red">Learn more about Omaha Gives!</p>
+          <p style="text-align: center;" class="copy-red"><a href="">Learn more about Omaha Gives!</a></p>
         </div>
       </div>
 
@@ -54,15 +68,53 @@
       </div>
     </header>
     <div id="main" role="main">
-
+      <div class="info-what">
+        <div class="container">
+          <p>Omaha Gives! is an annual 24-hour charitable challenge to benefit metro-area nonprofits. This community give-together begins at midnight on May 20 with a minimum gift of only $10. We've got hourly drawings, prizes, and bonus dollars to boost your gifts. So gather your circles, schedule your gifts, and get ready to cheer for your favorite nonprofits throughout the day.</p>
+        </div>
+      </div>
+      <div class="info-why">
+        <div class="container">
+          <h3 class="icon--banner">Let's Give Together</h3>
+          <h4>The spirit of giving and a little friendly competition brings our community together in a very big way.</h4>
+          <div class="column">
+            <p class="h5">Nonprofits Win</p>
+            <p class="copy-large">Last year, more than 18,000 people raised $6.3 million for almost 600 area nonprofits in just one day!</p>
+          </div>
+          <div class="column">
+            <p class="h5">Grow More Good</p>
+            <p class="copy-large">Nonprofits win bonus dollars for drumming up the most support. Hourly drawings and prizes only sweeten the give.</p>
+          </div>
+          <div class="column last">
+            <p class="h5">Give Two Ways</p>
+            <p class="copy-large">Schedule your gifts ahead of time or make donations throughout the day (Have more fun—give both ways!) </p>
+          </div>
+          <div class="btn btn--large btn--inline"><span>Find a Nonprofit</span></div>
+          <p class="copy-red"><a href="">Wanna know more? Check out the rules.</a></p>
+        </div>
+      </div>
+      <div class="sponsors">
+        <div class="container">
+          <p class="subhead--large">Our Sponsors</p>
+          <p class="subhead">Presenting Sponsor:<br><img src="img/sponsors/og-sponsor_americannationalbank.jpg" alt="American National Bank logo"></p>
+          <p class="subhead">Hourly Drawing Sponsor:<br><img src="img/sponsors/og-sponsor_omahasteaks.jpg" alt="Omaha Steaks logo"></p>
+        </div>
+      </div>
     </div>
     <footer id="footer">
       <div class="footer--about">
-        <div class="container container__footer">
-          <div class="logo--og__footer">
-            <img class="logo--print" src="img/og-logo-header.png" alt="Omaha Gives! logo">
+        <div class="container footer--twitter">
+          <div class="twitter-callout">
+            <div class="logo--og__footer">
+              <img class="logo--print" src="img/og-logo-header.png" alt="Omaha Gives! logo">
+            </div>
+            <h4>Join the conversation by using <a class="copy-red" href="https://twitter.com/hashtag/OmahaGives">#OmahaGives</a></h4>
           </div>
-          <p class="footer--about__copy copy-large">Omaha Gives! is an annual 24-hour charitable challenge to benefit metro-area nonprofits. This community give-together begins at midnight on May 20 with a minimum gift of only $10. We've got hourly drawings, prizes, and bonus dollars to boost your gifts. So gather your circles, schedule your gifts, and get ready to cheer for your favorite nonprofits throughout the day.</p>
+
+          <div class="twitter-timeline">
+            <a class="twitter-timeline" href="https://twitter.com/hashtag/omahagives" data-widget-id="566054198345990145">#omahagives Tweets</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
         </div>
         <div class="circles--footer">
           <div class="icon--circles icon--circles__footer1"></div>

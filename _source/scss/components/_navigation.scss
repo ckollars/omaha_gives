@@ -117,7 +117,6 @@ nav > ul,
   position: absolute;
   right: 0;
   top: 0;
-  // margin-top: 8px;
   font-size: em(32px); // NOTE: Try changing size for mobile.
   line-height: rem(29px);
   letter-spacing: 2px;
@@ -157,5 +156,61 @@ nav > ul,
     &:hover {
       border-bottom: 1px solid $white;
     }
+  }
+}
+
+/**
+ * $USER NAVIGATION
+ */
+#user-nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: em(16px);
+}
+
+.menu-signup {
+  float: left;
+  margin-left: 24px;
+
+}
+
+.menu-signup--submenu {
+  margin: 0;
+  display: none;
+}
+
+.menu-signup--active {
+
+  .btn--signup {
+    // box-shadow: 0px -2px 0px 4px rgba(0,0,0,0.2);
+    display: inline-block;
+    float: right;
+    border-top: 4px solid rgba($lighter_gray, 0.2);
+    border-left: 4px solid rgba($lighter_gray, 0.2);
+    border-right: 4px solid rgba($lighter_gray, 0.2);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background-color: $white;
+    color: $red;
+    margin-top: 4px;
+  }
+
+  .menu-signup--submenu {
+    clear: right;
+    display: block;
+    padding: 24px;
+    background-color: $white;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 8px;
+    border-top: 4px solid rgba($lighter_gray, 0.2);
+    border-left: 4px solid rgba($lighter_gray, 0.2);
+    border-right: 4px solid rgba($lighter_gray, 0.2);
+    border-bottom: 4px solid rgba($lighter_gray, 0.2);
+
   }
 }

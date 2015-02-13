@@ -100,3 +100,33 @@
   right: 2%;
 }
 
+.icon--banner {
+  @include background-image-retina('../img/og-banner_letsgivetogether', png, 583px, 116px);
+  width: 583px;
+  height: 116px;
+  overflow: hidden;
+  text-indent: em(-9999px);
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 639px) {
+    @include background-image-retina('../img/og-banner_letsgivetogether', png, 480px, 96px);
+    width: 480px;
+    height: 96px;
+  }
+  @media (max-width: 479px) {
+    @include background-image-retina('../img/og-banner_letsgivetogether', png, 360px, 72px);
+    width: 360px;
+    height: 72px;
+  }
+  @media (max-width: 375px) {
+    @include background-image-retina('../img/og-banner_letsgivetogether', png, 330px, 66px);
+    width: 330px;
+    height: 66px;
+  }
+  @media (max-width: 360px) {
+    @include background-image-retina('../img/og-banner_letsgivetogether', png, 280px, 56px);
+    width: 280px;
+    height: 56px;
+  }
+}

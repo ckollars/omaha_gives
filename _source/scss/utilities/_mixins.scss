@@ -26,10 +26,6 @@
   display: none;
 }
 
-@mixin text-invisible {
-  text-indent: -999em;
-}
-
 @mixin element-invisible {
   margin: -1px;
   padding: 0;

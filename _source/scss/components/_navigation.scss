@@ -2,7 +2,7 @@
  * $NAVIGATION
  */
 nav > ul,
-.nav > ul {
+.nav > ul, {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -164,8 +164,9 @@ nav > ul,
  */
 #user-nav {
   position: absolute;
+  z-index: 100;
   right: 0;
-  top: 0;
+  top: 10px;
   font-size: em(16px);
 }
 
@@ -173,19 +174,33 @@ nav > ul,
   float: left;
   margin-left: 24px;
 
+  > li {
+    display: inline-block;
+
+    &:first-child {
+      margin-right: 16px;
+    }
+  }
 }
 
 .menu-signup--submenu {
   margin: 0;
   display: none;
+
+  .btn--small {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  li:first-child {
+    margin-bottom: 8px;
+  }
 }
 
 .menu-signup--active {
 
   .btn--signup {
-    // box-shadow: 0px -2px 0px 4px rgba(0,0,0,0.2);
-    display: inline-block;
-    float: right;
+    display: block;
     border-top: 4px solid rgba($lighter_gray, 0.2);
     border-left: 4px solid rgba($lighter_gray, 0.2);
     border-right: 4px solid rgba($lighter_gray, 0.2);
@@ -195,11 +210,13 @@ nav > ul,
     border-top-left-radius: 8px;
     background-color: $white;
     color: $red;
-    margin-top: 4px;
   }
 
   .menu-signup--submenu {
-    clear: right;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    margin-top: -4px;
     display: block;
     padding: 24px;
     background-color: $white;

@@ -1,7 +1,7 @@
 html {
   font-family: $base-font-family;
   font-size: 90%;
-
+  -webkit-font-smoothing: antialiased;
   // @include respond-to(mobile){
   //   font-size: 80%;
   // }

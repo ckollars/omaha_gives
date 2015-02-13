@@ -1,0 +1,57 @@
+.pagination {
+  margin: 20px 0;
+  font-size: em(20px);
+  line-height: 32px;
+  text-transform: uppercase;
+
+  a {
+    @include transition(color 0.2s, border-color 0.2s);
+    display: inline-block;
+    color: $red;
+    text-decoration: none;
+
+    &:hover,
+    .active & {
+      color: $turquoise;
+    }
+  }
+}
+
+.pagination-centered {
+  text-align: center;
+}
+
+.page__list {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    display: inline;
+    list-style: none;
+  }
+}
+
+.page__list-item {
+
+  &:not(.pager) {
+    a {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid rgba($white, 0);
+
+      &:hover {
+        border-color: $turquoise;
+      }
+    }
+  }
+
+  &.page__list-item--current a {
+    border-color: $turquoise;
+    color: $turquoise;
+  }
+}
+
+

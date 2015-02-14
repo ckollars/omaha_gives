@@ -1,0 +1,71 @@
+/**
+ * $INPUT
+ */
+input[type="text"],
+input[type="email"],
+input[type="search"] {
+  @include transition(border-color 0.2s);
+  border: 3px solid $turquoise;
+  border-radius: 4px;
+  background-color: white;
+  padding: 8px 14px;
+  font-size: em(20px);
+  color: $dark_gray;
+
+  @include placeholder {
+    color: $dark_gray;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $gold;
+    outline: none;
+  }
+  &:hover:not(:focus) {
+    border-color: $light_turquoise;
+  }
+  &.error {
+    border-color: $red;
+    @include placeholder {
+      color: $red;
+    }
+    &:hover {
+      border-color: $light_red;
+    }
+  }
+}
+
+/**
+ * $SELECT
+ */
+.select--blue {
+  @include transition(background-color 0.2s);
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  color: $white;
+  overflow: hidden;
+  background: $blue url(../img/og-select-arrow.png) no-repeat 94% center;
+
+  &:hover,
+  &:active {
+    background-color: $dark_blue;
+  }
+
+  select {
+    padding: 14px 16px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    font-size: em(20px);
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

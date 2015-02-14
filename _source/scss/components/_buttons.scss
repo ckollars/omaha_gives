@@ -59,17 +59,22 @@
  * $SECONDARY
  */
 .btn--secondary {
-  @include transition(color 0.2s);
-  padding: 16px 16px 16px 42px;
+  @include transition(color 0.2s, background 0.2s);
+  display: inline-block;
+  padding: 14px 16px 14px 42px;
   background-color: $white;
   font-size: em(18px);
   color: $blue;
-  // NOTE: Adjust image nameing convention to work
+  text-align: left;
+  text-transform: inherit;
+  background-repeat: no-repeat;
+  background-position: 16px center;
   @include background-image-retina('../img/og-icon_add', png, 16px, 16px);
 
   &:hover {
     background-color: $dark_blue;
     color: $white;
+    @include background-image-retina('../img/og-icon_addwhite', png, 16px, 16px);
   }
 
   &:active {

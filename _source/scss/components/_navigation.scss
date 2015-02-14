@@ -175,7 +175,9 @@ nav > ul,
   margin-left: 24px;
 
   > li {
-    display: inline-block;
+    // display: inline-block;
+    float: left;
+    line-height: 1;
 
     &:first-child {
       margin-right: 16px;
@@ -186,10 +188,11 @@ nav > ul,
 .menu-signup--submenu {
   margin: 0;
   display: none;
+  list-style: none;
 
   .btn--small {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   li:first-child {

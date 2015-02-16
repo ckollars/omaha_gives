@@ -61,7 +61,7 @@
 }
 
 .icon--circles__header2 {
-  background: url(../img/og-circles_header2.png) no-repeat;
+  @include background-image-retina('../img/og-circles_header2', png, 170px, 232px);
   width: 170px;
   height: 232px;
   top: 76%;
@@ -69,7 +69,7 @@
 }
 
 .icon--circles__header4 {
-  background: url(../img/og-circles_header4.png) no-repeat;
+  @include background-image-retina('../img/og-circles_header4', png, 239px, 136px);
   width: 239px;
   height: 136px;
   top: 66%;
@@ -77,7 +77,7 @@
 }
 
 .icon--circles__footer1 {
-  @include background-image-retina('../img/og-circles_footer1', png, 167px, 148px);
+  @include background-image-retina('../img/og-circles_footer1', png, 211px, 187px);
   width: 211px;
   height: 187px;
   top: -10%;
@@ -85,7 +85,7 @@
 }
 
 .icon--circles__footer2 {
-  @include background-image-retina('../img/og-circles_footer2', png, 167px, 148px);
+  @include background-image-retina('../img/og-circles_footer2', png, 162px, 154px);
   width: 162px;
   height: 154px;
   top: 80%;
@@ -93,7 +93,7 @@
 }
 
 .icon--circles__footer3 {
-  @include background-image-retina('../img/og-circles_footer3', png, 167px, 148px);
+  @include background-image-retina('../img/og-circles_footer3', png, 179px, 210px);
   width: 179px;
   height: 210px;
   top: 30%;

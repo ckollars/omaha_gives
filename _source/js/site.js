@@ -1,5 +1,5 @@
-var navButton = $('.btn--mobile-menu'),
-  signupButton = $('.btn--signup'),
+var navButton = $('.button--mobile-menu'),
+  signupButton = $('.button--signup'),
   navigation = $('#main-nav');
 
 $(function () {

@@ -190,7 +190,7 @@ nav > ul,
   display: none;
   list-style: none;
 
-  .btn--small {
+  .button--small {
     padding-top: 12px;
     padding-bottom: 12px;
   }
@@ -202,7 +202,7 @@ nav > ul,
 
 .menu-signup--active {
 
-  .btn--signup {
+  .button--signup {
     display: block;
     border-top: 4px solid rgba($lighter_gray, 0.2);
     border-left: 4px solid rgba($lighter_gray, 0.2);

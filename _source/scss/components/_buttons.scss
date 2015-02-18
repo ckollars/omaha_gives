@@ -1,4 +1,4 @@
-.btn {
+.button {
   @include transition(background-color 0.2s);
   display: block;
   padding: 16px;
@@ -25,7 +25,7 @@
 /**
  * $LARGE
  */
-.btn--large {
+.button--large {
   padding: 20px 30px;
   font-size: em(24px);
   letter-spacing: em(2px);
@@ -35,14 +35,14 @@
 /**
  * $SMALL
  */
-.btn--small {
+.button--small {
   font-size: em(16px);
 }
 
 /**
  * $RED
  */
-.btn--red {
+.button--red {
   background-color: $red;
 
   &:hover {
@@ -58,7 +58,7 @@
 /**
  * $SECONDARY
  */
-.btn--secondary {
+.button--secondary {
   @include transition(color 0.2s, background 0.2s);
   display: inline-block;
   padding: 14px 16px 14px 42px;
@@ -86,15 +86,15 @@
 /**
  * $CART
  */
-.btn--cart {
+.button--cart {
   cursor: pointer;
 }
 
 /**
  * $SOCIAL
  */
-.btn--facebook,
-.btn--twitter {
+.button--facebook,
+.button--twitter {
   padding: 24px 16px;
   font-size: em(20px);
   background-color: $white;
@@ -103,7 +103,7 @@
 
 }
 
-.btn--facebook {
+.button--facebook {
   @include transition(opacity 0.2s);
   color: $fb-blue;
 
@@ -117,7 +117,7 @@
   }
 }
 
-.btn--twitter {
+.button--twitter {
   @include transition(opacity 0.2s);
   color: $tw-blue;
 
@@ -135,7 +135,7 @@
 /**
  * $MOBILE MENU
  */
-.btn--mobile-menu {
+.button--mobile-menu {
   @include background-image-retina('../img/og-icon_menu', png, 16px, 17px);
   display: block;
   width: 36px;
@@ -163,7 +163,7 @@
   }
 }
 
-.btn--login {
+.button--login {
   display: block;
   float: left;
   color: $red;
@@ -172,6 +172,6 @@
   text-transform: uppercase;
 }
 
-.btn--signup {
+.button--signup {
   padding: 16px 24px;
 }

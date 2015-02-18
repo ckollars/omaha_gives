@@ -30,7 +30,7 @@ body {
   }
 }
 
-.container {
+.wrapper {
   @include clearfix;
   position: relative;
   max-width: 1140px;

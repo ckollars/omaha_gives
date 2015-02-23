@@ -88,7 +88,7 @@
 
   @include respond-to(mobile) {
     @include span(1 of 1);
-    padding: 0 20px;
+    padding: 0 10%;
     margin: 10px 0;
   }
 
@@ -114,12 +114,8 @@
   }
 
   .h5 {
+    margin-top: rem(32px);
     margin-bottom: rem(16px);
-
-    @include respond-to(small) {
-      margin-bottom: rem(16px);
-      margin-top: rem(32px);
-    }
   }
 }
 

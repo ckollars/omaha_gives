@@ -31,6 +31,7 @@
  * $BACKGROUND CIRCLES
  */
 .icon--circles {
+  background-repeat: no-repeat;
   position: absolute;
 }
 
@@ -69,24 +70,24 @@
 }
 
 .icon--circles__header4 {
-  @include background-image-retina('../img/og-circles_header4', png, 239px, 136px);
-  width: 239px;
-  height: 136px;
+  @include background-image-retina('../img/og-circles_header4', png, 232px, 134px);
+  width: 232px;
+  height: 134px;
   top: 66%;
   left: 63%;
 }
 
 .icon--circles__footer1 {
-  @include background-image-retina('../img/og-circles_footer1', png, 211px, 187px);
-  width: 211px;
-  height: 187px;
+  @include background-image-retina('../img/og-circles_footer1', png, 209px, 240px);
+  width: 209px;
+  height: 240px;
   top: -10%;
   left: 2%;
 }
 
 .icon--circles__footer2 {
-  @include background-image-retina('../img/og-circles_footer2', png, 162px, 154px);
-  width: 162px;
+  @include background-image-retina('../img/og-circles_footer2', png, 163px, 154px);
+  width: 163px;
   height: 154px;
   top: 80%;
   left: 40%;

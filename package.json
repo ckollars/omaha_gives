@@ -28,7 +28,7 @@
     "time-grunt": "~0.2.8",
     "grunt-favicons": "~0.6.4",
     "grunt-contrib-imagemin": "~0.8.1",
-    "grunt-autoprefixer": "~2.0.0"
+    "grunt-autoprefixer": "~2.2.0"
   },
   "licenses": [
     {

@@ -12,7 +12,7 @@ module.exports = function (grunt) {
   grunt.registerTask(
     'build-styles',
     'CSS build.',
-    ['scsslint', 'sass:build', 'autoprefixer:multiple_files' ]
+    ['scsslint', 'sass:build', 'autoprefixer' ]
   );
 
   // Build js scripts for development

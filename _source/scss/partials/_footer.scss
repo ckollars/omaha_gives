@@ -15,7 +15,6 @@
 .footer--about {
   @include clearfix;
   position: relative;
-  // z-index: 1;
   padding: 50px 20px 60px 20px;
   background: $tan url(../img/bg-texture_header.jpg) repeat-x center top;
   overflow: hidden;
@@ -29,9 +28,11 @@
 .footer--content {
   padding: 40px 20px;
   color: $white;
+  text-align: center;
 
   @include respond-to(small) {
     padding-top: 86px;
+    text-align: left;
   }
   @include respond-to(large) {
     padding-left: 0;
@@ -272,5 +273,16 @@
       text-decoration: none;
       font-weight: 700;
     }
+  }
+}
+
+.civicore-logo {
+  display: inline-block;
+  margin-top: 20px;
+
+  @include respond-to(small) {
+    right: 0;
+    position: absolute;
+    bottom: 0;
   }
 }

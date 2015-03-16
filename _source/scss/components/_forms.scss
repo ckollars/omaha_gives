@@ -14,7 +14,7 @@ input[type="password"] {
   color: $dark_gray;
 
   @include placeholder {
-    color: $dark_gray;
+    color: $lighter_gray;
   }
 
   &:active,
@@ -80,6 +80,6 @@ input[type="password"] {
   option {
     background-color: $white;
     color: $dark_gray;
-    max-width: 70%;
+    // max-width: 70%;
   }
 }

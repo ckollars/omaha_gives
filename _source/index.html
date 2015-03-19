@@ -16,57 +16,70 @@
   </head>
   <body class="home">
     <header id="header">
+
+              <div class="circles--header">
+            <div class="icon--circles icon--circles__header5"></div>
+            <div class="icon--circles icon--circles__header1"></div>
+          </div>
+
       <div class="wrap--header">
         <div class="wrapper">
-          <a class="logo--header icon--og-logo" href="/">
-            <img class="logo--print" src="img/og-logo-header.png" alt="Omaha Gives logo">
+          <a class="logo--header icon--og-logo" href="">
             <h1>Omaha Gives!</h1>
           </a>
-          <nav id="user-nav" class="menu-signup--active">
-            <ul class="menu-signup">
-              <li>
-                <a href="" class="button--login">Login</a>
-              </li>
-              <li>
-                <a href="" class="button button--small button--red button--signup">
-                  <div><span>Signup</span></div>
-                </a>
-                <ul class="menu-signup--submenu">
-                  <li><a href="" class="button button--red button--small">Donor</a></li>
-                  <li><a href="" class="button button--red button--small">Nonprofit</a></li>
-                </ul>
-              </li>
-            </ul>
+
+
+          <div class="nav nav--cart">
+            <div class="nav__item"><div class="cartAmount">$0</div></div>
+            <a href=""><div class="nav__item icon--cart button--cart"></div></a>
+          </div>
+
+          <nav id="user-nav" class="menu-signup">
+                  <ul class="menu-signup">
+                    <li><a class="button--login" href="index.php?action=userLogin">Login</a></li>
+                    <li class="signup-dropdown"><a class="button button--small button--red button--signup" href=""><div><span>Signup</span></div></a>
+                      <ul class="menu-signup--submenu" style="margin-top:-5px;">
+                      <li><a class="button button--red button--small" href="index.php?section=newAccount&amp;action=new">Donor</a></li>
+                      <li><a class="button button--red button--small" href="https://omahagives24.civicore.com/index.php?action=userLogin">Nonprofit</a></li>
+                     </ul>
+                    </li>
+                  </ul>
           </nav>
+          <script>
+            var navButton = $('.button--mobile-menu'),
+              signupButton = $('.signup-dropdown'),
+              navigation = $('#main-nav');
+
+            $(function () {
+              navButton.on('click', function () {
+                  navigation.toggleClass('show-menu');
+              });
+              signupButton.on('mouseenter', function (e) {
+                  e.preventDefault();
+                  $('#user-nav').toggleClass('menu-signup--active');
+              });
+              signupButton.on('mouseleave', function (e) {
+                  e.preventDefault();
+                  $('#user-nav').toggleClass('menu-signup--active');
+              });
+            });
+          </script>
+
+
+
           <nav id="main-nav" class="nav" role="navigation">
             <span class="button button--mobile-menu">Menu</span>
             <ul class="menu--main-menu">
-              <li class="nav__item"><a href="#">Nonprofits</a></li>
-              <li class="nav__item"><a href="#">Leaderboard</a></li>
-              <li class="nav__item"><a href="#">Rules</a></li>
-              <li class="nav__item"><a href="#">About</a></li>
+              <li class="nav__item"><a href="nonprofits">Nonprofits</a></li>
+              <li class="nav__item"><a href="content/leaderboards">Leaderboard</a></li>
+              <li class="nav__item"><a href="content/rules">Toolkits</a></li>
+              <li class="nav__item"><a href="content/whatsOmahaGives">About</a></li>
             </ul>
           </nav>
-          <!-- <div class="nav nav--cart">
-            <div class="nav__item">$2,890.00</div>
-            <div class="nav__item icon--cart button--cart"></div>
-          </div> -->
         </div>
         <div class="wrapper">
-          <div class="counter">
-            <p class="subhead" style="margin-bottom: 0;">We're counting down to may 20, 2015</p>
-            <h1 style="font-size: 106px;margin-bottom: 0;color: #daa648;">120:05:35:20</h1>
-          </div>
-          <a href="" class="button button--large" style="max-width: 340px;margin: 20px auto;">Find a Nonprofit</a>
-          <p style="text-align: center;" class="copy-red"><a href="">Learn more about Omaha Gives!</a></p>
+          <br><br>
         </div>
-      </div>
-
-      <div class="circles--header circles--header-home">
-        <div class="icon--circles icon--circles__header1"></div>
-        <div class="icon--circles icon--circles__header2"></div>
-        <div class="icon--circles icon--circles__header4"></div>
-        <div class="icon--circles icon--circles__header5"></div>
       </div>
     </header>
     <div id="main" role="main">

@@ -17,10 +17,12 @@
   <body class="home">
     <header id="header">
 
-              <div class="circles--header">
-            <div class="icon--circles icon--circles__header5"></div>
-            <div class="icon--circles icon--circles__header1"></div>
-          </div>
+            <div class="circles--header circles--header-home">
+              <div class="icon--circles icon--circles__header1"></div>
+              <div class="icon--circles icon--circles__header2"></div>
+              <div class="icon--circles icon--circles__header4"></div>
+              <div class="icon--circles icon--circles__header5"></div>
+        </div>
 
       <div class="wrap--header">
         <div class="wrapper">
@@ -28,22 +30,20 @@
             <h1>Omaha Gives!</h1>
           </a>
 
-
-          <div class="nav nav--cart">
-            <div class="nav__item"><div class="cartAmount">$0</div></div>
-            <a href=""><div class="nav__item icon--cart button--cart"></div></a>
-          </div>
-
           <nav id="user-nav" class="menu-signup">
-                  <ul class="menu-signup">
-                    <li><a class="button--login" href="index.php?action=userLogin">Login</a></li>
-                    <li class="signup-dropdown"><a class="button button--small button--red button--signup" href=""><div><span>Signup</span></div></a>
-                      <ul class="menu-signup--submenu" style="margin-top:-5px;">
-                      <li><a class="button button--red button--small" href="index.php?section=newAccount&amp;action=new">Donor</a></li>
-                      <li><a class="button button--red button--small" href="https://omahagives24.civicore.com/index.php?action=userLogin">Nonprofit</a></li>
-                     </ul>
-                    </li>
-                  </ul>
+            <ul class="menu-signup">
+              <li><a class="button--login" href="index.php?action=userLogin">Login</a></li>
+              <li class="signup-dropdown"><a class="button button--small button--red button--signup" href=""><div><span>Signup</span></div></a>
+                <ul class="menu-signup--submenu">
+                <li><a class="button button--red button--small" href="index.php?section=newAccount&amp;action=new">Donor</a></li>
+                <li><a class="button button--red button--small" href="https://omahagives24.civicore.com/index.php?action=userLogin">Nonprofit</a></li>
+               </ul>
+              </li>
+            </ul>
+            <div class="nav nav--cart">
+              <a href="" class="nav__item icon--cart button--cart"></a>
+              <div class="nav__item cartAmount">$1,250.00</div>
+            </div>
           </nav>
           <script>
             var navButton = $('.button--mobile-menu'),
@@ -78,7 +78,23 @@
           </nav>
         </div>
         <div class="wrapper">
-          <br><br>
+
+              <div class="counter">
+                <div class="subhead" style="margin-bottom:0;">We're counting down to may 20, 2015</div>
+                <div id="givesDayCountdown" class="hasCountdown"><h1 class="countdownTimer" style="margin-bottom:0;color:#daa648"><div class="days"><p>61<br><span>DAYS</span></p></div><div class="clock-space"><p>:</p></div><div class="hours"><p>08<br><span>HOURS</span></p></div><div class="clock-space"><p>:</p></div><div class="minutes"><p>26<br><span>MINUTES</span></p></div><div class="clock-space"><p>:</p></div><div class="seconds"><p>15<br><span>SECONDS</span></p></div></h1></div>
+
+                <div class="clear"></div>
+                <script type="text/javascript">
+                  $(function () {
+                    var endOfDay = new Date();
+                    endOfDay = new Date(2015, 4, 20, 00);
+                    $('#givesDayCountdown').countdown({until: endOfDay, timezone: -6, format: 'dHMS', layout: "<h1 class='countdownTimer' style='margin-bottom:0;color:#daa648'><div class='days'><p>{dnn}<br><span>DAYS</span></p></div><div class='clock-space'><p>:</p></div><div class='hours'><p>{hnn}<br><span>HOURS</span></p></div><div class='clock-space'><p>:</p></div><div class='minutes'><p>{mnn}<br><span>MINUTES</span></p></div><div class='clock-space'><p>:</p></div><div class='seconds'><p>{snn}<br><span>SECONDS</span></p></div></h1>"});
+                  });
+                </script>
+              </div>
+              <a class="button button--large" style="max-width:340px;margin:20px auto;" href="nonprofits">Find a Nonprofit</a>
+              <p style="text-align:center;" class="copy-red"><a href="content/whatsOmahaGives">Learn more about Omaha Gives!</a></p>
+
         </div>
       </div>
     </header>

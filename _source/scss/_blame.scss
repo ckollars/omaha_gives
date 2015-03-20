@@ -1,0 +1,62 @@
+/***************************** HOME PAGE TICKER **************************************/
+
+
+.days {
+  float:left;
+}
+
+.hours {
+  float:left;
+}
+
+.clock-space {
+  float:left;
+  margin: 0px 8px 0px 8px;
+}
+
+.minutes {
+  float:left;
+}
+
+.seconds {
+  float:left;
+}
+
+.countdownTimer p span {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.countdownTimer p {
+  margin: 62px 0 0 0;
+}
+.clear {
+  clear: both;
+}
+.countdownTimer {
+  font-size:106px;
+}
+@media only screen and (max-width: 655px) {
+  .countdownTimer {
+    font-size:60px;
+  }
+  .countdownTimer p span {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 455px) {
+  .countdownTimer {
+    font-size:35px;
+  }
+  .countdownTimer p {
+    margin: 30px 0 0 0;
+  }
+}
+.counter {
+  padding: 30px 30px 30px 50px;
+}
+@media (max-width: 660px) {
+  .counter {
+    padding: 30px;
+  }
+}

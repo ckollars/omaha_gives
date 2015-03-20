@@ -2,7 +2,7 @@ module.exports = {
   build: {
     options: {
       style: 'expanded',
-      debugInfo: false,
+      debugInfo: true,
       sourcemap: 'none'
     },
     files: {

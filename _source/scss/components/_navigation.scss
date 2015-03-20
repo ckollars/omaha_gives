@@ -110,29 +110,7 @@ nav > ul,
   }
 }
 
-/**
- * $CART NAVIGATION
- */
-.nav--cart {
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-size: em(32px); // NOTE: Try changing size for mobile.
-  line-height: rem(29px);
-  letter-spacing: 2px;
-  text-align: right;
-  color: $orange;
 
-  @media screen and (min-width: 768px) {
-    margin-top: 20px;
-    font-size: em(42px);
-  }
-
-  > .nav__item {
-    color: $orange;
-    margin: 0;
-  }
-}
 
 /**
  * $FOOTER NAVIGATION
@@ -160,22 +138,72 @@ nav > ul,
 }
 
 /**
+ * $CART NAVIGATION
+ */
+.nav--cart {
+  @include clearfix;
+  float: left;
+  border: 2px solid;
+  border-radius: 4px;
+  margin-left: 24px;
+  font-size: em(24px); // NOTE: Try changing size for mobile.
+  line-height: rem(48px);
+  letter-spacing: 2px;
+  text-align: right;
+  color: $orange;
+
+  @media screen and (max-width: 480px) {
+    clear: both;
+    float: none;
+    right: 0;
+  }
+
+  @include respond-to(small) {
+    font-size: em(28px);
+    line-height: rem(42px);
+  }
+
+  > .nav__item {
+    color: $orange;
+    float: right;
+    display: block;
+    margin-right: 8px;
+
+    &:first-child {
+      margin-right: 0;
+    }
+  }
+
+  > a {
+    display: inline-block;
+    line-height: 0;
+  }
+}
+
+/**
  * $USER NAVIGATION
  */
 #user-nav {
   position: absolute;
   z-index: 100;
   right: 0;
-  top: 10px;
+  top: 0;
   font-size: em(16px);
 }
 
 .menu-signup {
+  @include clearfix;
+  position: relative;
   float: left;
-  margin-left: 24px;
+
+  @media screen and (max-width: 480px) {
+    width: inherit;
+    float: right;
+    right: 0;
+    margin-bottom: 8px;
+  }
 
   > li {
-    // display: inline-block;
     float: left;
     line-height: 1;
 

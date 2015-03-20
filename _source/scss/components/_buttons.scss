@@ -88,6 +88,8 @@
  */
 .button--cart {
   cursor: pointer;
+  background-color: $orange;
+  padding: 22px;
 }
 
 /**
@@ -140,7 +142,7 @@
   display: block;
   width: 36px;
   height: 36px;
-  padding: 6px;
+  padding: 23px;
   background-color: $red;
   background-repeat: no-repeat;
   background-position: center;
@@ -173,5 +175,8 @@
 }
 
 .button--signup {
-  padding: 16px 24px;
+  padding: 12px 20px 16px 20px;
+  border-top: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
 }

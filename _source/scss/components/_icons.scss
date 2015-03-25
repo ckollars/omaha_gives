@@ -1,5 +1,7 @@
 .icon--cart {
-  @include background-image-retina('../img/og-icon_cart', png, 24px, 22px);
+  @include background-image-retina('../img/og-icon_cartwhite', png, 24px, 22px);
+  background-repeat: no-repeat;
+  background-position: center;
   width: 24px;
   height: 22px;
 }

@@ -20,6 +20,59 @@
   }
 }
 
+
+.participation-sponsors {
+  @include respond-to(medium) {
+    float: left;
+    width: 70%;
+
+    p.subhead {
+      margin-bottom: 65px;
+    }
+  }
+
+}
+
+.hourly-sponsors {
+  margin-top: 60px;
+  @include respond-to(medium) {
+    float: left;
+    margin-top: 0;
+    width: 30%;
+
+    p.subhead {
+      margin-bottom: 30px;
+    }
+  }
+
+
+}
+
+
+.sub-sponsors {
+  display: table;
+  width: 100%;
+
+
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    @include respond-to(mobile) {
+      display: block;
+      margin-bottom: 60px;
+    }
+  }
+
+  img {
+    margin: 0 20px;
+
+    .hourly-sponsors & {
+      max-width: 60%;
+    }
+  }
+}
+
 .info-why {
   padding: 80px 20px;
   background: $tan url(../img/bg-texture_header.jpg) center top;

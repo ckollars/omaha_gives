@@ -95,14 +95,8 @@
 
 .info-what {
   padding: 80px 30px;
-  background: url(../img/og-photodrop.jpg) repeat center top;
-  // background-repeat: repeat-x;
-  // background-position: 0 0;
-
-  @include respond-to(mobile) {
-    // background-position: center center;
-    background-size: cover;
-  }
+  background: url(../img/og-photodrop.jpg) no-repeat center top;
+  background-size: cover;
 
   @include respond-to(small) {
     padding: 90px 30px;

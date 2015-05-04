@@ -180,3 +180,23 @@
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
 }
+
+.button--play {
+  display: block;
+  max-width: 170px;
+  margin: 30px auto 0 auto;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-indent: -9999em;
+  color: $white;
+  font-size: em(24px);
+  font-weight: 700;
+
+  &:hover {
+    background-color: transparent;
+    color: $white;
+    text-decoration: none;
+  }
+}
+

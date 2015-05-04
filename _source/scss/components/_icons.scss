@@ -29,6 +29,20 @@
   content: '';
 }
 
+.icon--play {
+  @include background-image-retina('../img/og-icon_playbutton', png, 95px, 95px);
+  display: block;
+  width: 95px;
+  height: 95px;
+  margin: 0 auto 16px auto;
+
+  @include respond-to(mobile) {
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+  }
+}
+
 /**
  * $BACKGROUND CIRCLES
  */
@@ -116,6 +130,7 @@
     @include background-image-retina('../img/og-banner_letsgivetogether', png, 480px, 96px);
     width: 480px;
     height: 96px;
+    background-size: cover;
   }
   @media (max-width: 479px) {
     @include background-image-retina('../img/og-banner_letsgivetogether', png, 360px, 72px);

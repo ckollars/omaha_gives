@@ -95,21 +95,22 @@
 
 .info-what {
   padding: 80px 30px;
-  background-image: url(../img/og-photodrop.jpg);
-  background-repeat: repeat-x;
-  background-position: center top;
+  background: url(../img/og-photodrop.jpg) repeat center top;
+  // background-repeat: repeat-x;
+  // background-position: 0 0;
 
   @include respond-to(mobile) {
-    background-position: center center;
+    // background-position: center center;
+    background-size: cover;
   }
 
   @include respond-to(small) {
-    padding: 140px 30px;
+    padding: 90px 30px;
   }
 
   p {
     margin: auto;
-    max-width: 690px;
+    max-width: 730px;
     font-size: em(28px);
     line-height: rem(42px);
     font-weight: 300;
